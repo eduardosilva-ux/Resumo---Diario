@@ -470,7 +470,7 @@ function TabExec({M,cfg,f}){const T=useContext(TokCtx);const D=REPORT.daily,R=RE
   <div class="grid">
     <div class="card c7"><h2>Volume nos recortes do relatório</h2><div class="sub">Cinco datas isoladas que o PDF compara. Não é série contínua.</div>
       <${VBar} data=${dailyData} dk="vol" name="Volume" fmt=${fBRL} labels=${true} colorBy=${d=>d.full.startsWith(REPORT.dates[b].k)?T.series:T.neutral}/></div>
-    <div class="card c5"><h2>Transações e ticket nos recortes</h2><div class="sub">Ticket de 22/11/2025 ajustado para R$ 156,27, sem a UBER (R$ 48.434,48 e 1.321 transações). O PDF informa R$ 51,64 com a UBER.</div>
+    <div class="card c5"><h2>Transações e ticket nos recortes</h2><div class="sub">Ticket de 22/11/2025 ajustado para R$ 156,27.</div>
       <${VBar} data=${dailyData} dk="trans" name="Transações" fmt=${fInt} labels=${true} h=${150}/>
       <${VBar} data=${dailyData} dk="ticket" name="Ticket médio" fmt=${fBRL} labels=${true} h=${150} color=${T.series2}/></div>
     <div class="card c6"><h2>Três métricas financeiras diferentes</h2>
