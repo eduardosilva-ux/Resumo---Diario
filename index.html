@@ -179,7 +179,7 @@ const REPORT={
     users:[73,100,128,421,139],
     emp:[21,22,26,45,30],
     mot:[70,61,85,501,605],
-    ticket:[191.22,159.56,291.41,189.81,51.64],
+    ticket:[191.22,159.56,291.41,189.81,156.27], /* 22/11/2025 ajustado sem a UBER: (77.970,16 - 48.434,48) / (1.510 - 1.321). PDF informa 51,64 */
     receita:[4413.02,3972.51,12439.79,33072.41,null],
     conexao:[2,6,2,26,null],
     cliente:[19.10,-24.33,15.25,-96.60,-112.56],
@@ -436,7 +436,7 @@ function TabExec({M,cfg,f}){const T=useContext(TokCtx);const D=REPORT.daily,R=RE
     <${KPI} label="Receita total Stuo" tag="real" value=${fBRL(D.receita[b])} delta=${pctVar(D.receita[b],D.receita[c])} sub=${"Mês: "+fBRL(R.mes.receita)}/>
     <${KPI} label="Transações" tag="real" value=${fInt(D.trans[b])} delta=${pctVar(D.trans[b],D.trans[c])} sub=${"Mês: "+fInt(R.mes.trans)}/>
     <${KPI} label="Corridas via App" tag="real" value=${b===0?fInt(R.dia.corridasApp):"n/d"} sub=${"Mês: "+fInt(R.mes.corridasApp)+". Só disponível para o dia do relatório"}/>
-    <${KPI} label="Ticket médio" tag="real" value=${fBRL(D.ticket[b])} delta=${pctVar(D.ticket[b],D.ticket[c])} sub=${"Mês: "+fBRL(R.mes.ticket)}/>
+    <${KPI} label="Ticket médio" tag=${b===4||c===4?"der":"real"} value=${fBRL(D.ticket[b])} delta=${pctVar(D.ticket[b],D.ticket[c])} sub=${"Mês: "+fBRL(R.mes.ticket)+(b===4||c===4?". 22/11/2025 sem a UBER (PDF: R$ 51,64)":"")}/>
     <${KPI} label="Empresas ativas" tag="real" value=${fInt(D.emp[b])} delta=${pctVar(D.emp[b],D.emp[c])} sub=${"Mês: "+fInt(R.mes.empAssoc)+" associadas, "+fInt(R.mes.grupos)+" grupos"}/>
     <${KPI} label="Empresas sem movimentação no mês" tag="der" value=${fInt(R.cadastro.empresas-R.mes.empAssoc)} sub=${fInt(R.cadastro.empresas)+" cadastradas menos "+R.mes.empAssoc+" com movimento no mês"}/>
     <${KPI} label="Usuários ativos" tag="real" value=${fInt(D.users[b])} delta=${pctVar(D.users[b],D.users[c])} sub=${"Mês: "+fInt(R.mes.usuarios)+". Base ativa cadastrada: "+fInt(R.cadastro.usuariosAtivos)}/>
@@ -470,7 +470,7 @@ function TabExec({M,cfg,f}){const T=useContext(TokCtx);const D=REPORT.daily,R=RE
   <div class="grid">
     <div class="card c7"><h2>Volume nos recortes do relatório</h2><div class="sub">Cinco datas isoladas que o PDF compara. Não é série contínua.</div>
       <${VBar} data=${dailyData} dk="vol" name="Volume" fmt=${fBRL} labels=${true} colorBy=${d=>d.full.startsWith(REPORT.dates[b].k)?T.series:T.neutral}/></div>
-    <div class="card c5"><h2>Transações e ticket nos recortes</h2><div class="sub">Ticket de 22/11/2025 (R$ 51,64) puxado por 1.321 transações da UBER.</div>
+    <div class="card c5"><h2>Transações e ticket nos recortes</h2><div class="sub">Ticket de 22/11/2025 ajustado para R$ 156,27, sem a UBER (R$ 48.434,48 e 1.321 transações). O PDF informa R$ 51,64 com a UBER.</div>
       <${VBar} data=${dailyData} dk="trans" name="Transações" fmt=${fInt} labels=${true} h=${150}/>
       <${VBar} data=${dailyData} dk="ticket" name="Ticket médio" fmt=${fBRL} labels=${true} h=${150} color=${T.series2}/></div>
     <div class="card c6"><h2>Três métricas financeiras diferentes</h2>
@@ -585,7 +585,7 @@ function TabTempo({M,f}){const T=useContext(TokCtx);const pdf=M.source==="pdf";
       ${pdf?html`<div class="sub">Recortes disponíveis no PDF (uma observação por data)</div>
         <div class="tbl"><table><thead><tr><th>Data</th><th class="n">Volume</th><th class="n">Trans.</th><th class="n">Ticket</th></tr></thead><tbody>
         ${dowRows.map(r=>html`<tr><td>${r.name}</td><td class="n">${fBRL(r.vol)}</td><td class="n">${fInt(r.trans)}</td><td class="n">${fBRL(r.ticket)}</td></tr>`)}</tbody></table></div>
-        <div class="note warn">Melhor dia da semana (absoluto e médio), comparação dias úteis × fim de semana e dias de menor uso exigem a base transacional com data e hora. Os recortes acima têm datas de naturezas diferentes (feriado, sábado, quinta) e não formam média.</div>`
+        <div class="note warn">Melhor dia da semana (absoluto e médio), comparação dias úteis × fim de semana e dias de menor uso exigem a base transacional com data e hora. Ticket de 22/11/2025 sem a UBER (PDF: R$ 51,64). Os recortes acima têm datas de naturezas diferentes (feriado, sábado, quinta) e não formam média.</div>`
       :html`<div class="tbl"><table><thead><tr><th>Dia</th><th class="n">Ocorr.</th><th class="n">Volume</th><th class="n">Média/dia</th><th class="n">Corridas</th><th class="n">Ticket</th></tr></thead><tbody>
         ${dowRows.map(r=>html`<tr><td>${r.name}</td><td class="n">${r.occ}</td><td class="n">${fBRL(r.vol)}</td><td class="n">${fBRL(r.avgV)}</td><td class="n">${fInt(r.trans)}</td><td class="n">${fBRL(r.ticket)}</td></tr>`)}</tbody></table></div>
         <div class="quad"><div>Média/dia útil<b>${fBRL(wk.uV)}</b>${fInt(wk.uT)} corridas</div><div>Média/dia fim de semana<b>${fBRL(wk.wV)}</b>${fInt(wk.wT)} corridas</div></div>
