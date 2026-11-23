@@ -208,6 +208,18 @@ const REPORT={
   statusCham:[{n:"Fechada",q:76},{n:"Cancelada",q:5}],
   cancelamentos:{porCategoria:[{n:"Comum",q:4},{n:"Promo",q:1}],porQuem:[{n:"Motorista",p:80},{n:"Usuário",p:20}]}
 };
+/* Opção "Todos" na Data base: índice 5 = consolidado das 5 datas do relatório (derivado) */
+const ALL=5;
+(function(){const sum=a=>{const x=a.slice(0,5).filter(v=>v!=null);return x.length?Math.round(x.reduce((s,v)=>s+v,0)*100)/100:null;};
+  PDF.empresas.forEach(e=>{e.v[ALL]=sum(e.v);e.t[ALL]=sum(e.t);});
+  PDF.cidades.forEach(c=>{c.v[ALL]=sum(c.v);});
+  const D=REPORT.daily;
+  ["vol","trans","cliente","admMot","antecip","rt"].forEach(k=>{D[k][ALL]=D[k].slice(0,5).every(v=>v!=null)?sum(D[k]):null;});
+  ["users","mot","receita","conexao"].forEach(k=>{D[k][ALL]=null;});/* não somáveis ou sem valor em todas as datas */
+  D.emp[ALL]=PDF.empresas.filter(e=>e.v[ALL]!=null).length;
+  const ub=PDF.empresas.filter(e=>/^UBER$/i.test(e.n));const uv=ub.reduce((s,e)=>s+(e.v[ALL]||0),0),ut=ub.reduce((s,e)=>s+(e.t[ALL]||0),0);
+  D.ticket[ALL]=(D.vol[ALL]-uv)/(D.trans[ALL]-ut);/* ticket consolidado sem a UBER, como o ajuste de 22/11/2025 */
+})();
 const DOW=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
 const DOWS=["Dom","Seg","Ter","Qua","Qui","Sex","Sáb"];
 const BANDS=[{k:"",n:"Todas"},{k:"madrugada",n:"Madrugada (0h-5h)",a:0,b:5},{k:"manha",n:"Manhã (6h-11h)",a:6,b:11},{k:"tarde",n:"Tarde (12h-17h)",a:12,b:17},{k:"noite",n:"Noite (18h-23h)",a:18,b:23}];
@@ -331,7 +343,7 @@ function buildPdfModel(cfg){const b=cfg.base,c=cfg.comp,D=REPORT.dates;
       varVol:pctVar(vb,vc),varTrans:pctVar(tb,tc),ticket:vb!=null&&tb?vb/tb:null,prevTicket:vc!=null&&tc?vc/tc:null,
       recorrencia:rec,serie:e.v,serieT:e.t,bestDay:null,bestDayAvg:null,bestHour:null,daysSince:null};}).filter(r=>r.present||r.presentPrev);
   const semComp=c<0;
-  return {source:"pdf",semComp,companies:semComp?companies.filter(r=>r.present):companies,baseLabel:D[b].k+" ("+D[b].dow+")",compLabel:semComp?"sem comparação":D[c].k+" ("+D[c].dow+")",periodo:"Recorte diário de "+D[b].k+(semComp?", sem comparação":" comparado a "+D[c].k),
+  return {source:"pdf",semComp,companies:semComp?companies.filter(r=>r.present):companies,baseLabel:b===ALL?"Todas as datas do relatório":D[b].k+" ("+D[b].dow+")",compLabel:semComp?"sem comparação":D[c].k+" ("+D[c].dow+")",periodo:b===ALL?"Consolidado das 5 datas do relatório ("+D.map(d=>d.k).join(", ")+"), sem comparação":"Recorte diário de "+D[b].k+(semComp?", sem comparação":" comparado a "+D[c].k),
     sameWeekday:semComp?true:D[b].di===D[c].di};}
 
 function buildCsvModel(cfg,rowsAll,f){
@@ -431,16 +443,16 @@ function TabExec({M,cfg,f}){const T=useContext(TokCtx);const D=REPORT.daily,R=RE
   const recMes=[{name:"Receita adm. motorista",v:R.mes.recMot},{name:"Receita rádio táxi",v:R.mes.recRT},{name:"Receita antecipação",v:R.mes.recAntecip},{name:"Taxa de conexão",v:R.mes.conexao},{name:"Receita cliente",v:R.mes.recCliente}];
   let kp;
   if(pdf){kp=html`
-    <${KPI} label="Volume transacionado" tag="real" value=${fBRL(D.vol[b])} delta=${pctVar(D.vol[b],D.vol[c])} sub=${"Mês até 22/11: "+fBRL(R.mes.volTrans)}/>
+    <${KPI} label="Volume transacionado" tag=${b===ALL?"der":"real"} value=${fBRL(D.vol[b])} delta=${pctVar(D.vol[b],D.vol[c])} sub=${"Mês até 22/11: "+fBRL(R.mes.volTrans)}/>
     <${KPI} label="Volume liquidado (líquido)" tag="real" value=${b===0?fBRL(R.dia.volLiq):"n/d"} sub=${"Mês: "+fBRL(R.mes.volLiq)+". Desconto: "+fBRL(R.dia.desconto)}/>
-    <${KPI} label="Receita total Stuo" tag="real" value=${fBRL(D.receita[b])} delta=${pctVar(D.receita[b],D.receita[c])} sub=${"Mês: "+fBRL(R.mes.receita)}/>
-    <${KPI} label="Transações" tag="real" value=${fInt(D.trans[b])} delta=${pctVar(D.trans[b],D.trans[c])} sub=${"Mês: "+fInt(R.mes.trans)}/>
+    <${KPI} label="Receita total Stuo" tag=${b===ALL?"nd":"real"} value=${fBRL(D.receita[b])} delta=${pctVar(D.receita[b],D.receita[c])} sub=${"Mês: "+fBRL(R.mes.receita)+(b===ALL?". Sem consolidado: o PDF não traz a receita de 22/11/2025":"")}/>
+    <${KPI} label="Transações" tag=${b===ALL?"der":"real"} value=${fInt(D.trans[b])} delta=${pctVar(D.trans[b],D.trans[c])} sub=${"Mês: "+fInt(R.mes.trans)}/>
     <${KPI} label="Corridas via App" tag="real" value=${b===0?fInt(R.dia.corridasApp):"n/d"} sub=${"Mês: "+fInt(R.mes.corridasApp)+". Só disponível para o dia do relatório"}/>
-    <${KPI} label="Ticket médio" tag=${b===4||c===4?"der":"real"} value=${fBRL(D.ticket[b])} delta=${pctVar(D.ticket[b],D.ticket[c])} sub=${"Mês: "+fBRL(R.mes.ticket)+(b===4||c===4?". 22/11/2025 sem a UBER (PDF: R$ 51,64)":"")}/>
-    <${KPI} label="Empresas ativas" tag="real" value=${fInt(D.emp[b])} delta=${pctVar(D.emp[b],D.emp[c])} sub=${"Mês: "+fInt(R.mes.empAssoc)+" associadas, "+fInt(R.mes.grupos)+" grupos"}/>
+    <${KPI} label="Ticket médio" tag=${b===4||c===4||b===ALL?"der":"real"} value=${fBRL(D.ticket[b])} delta=${pctVar(D.ticket[b],D.ticket[c])} sub=${"Mês: "+fBRL(R.mes.ticket)+(b===ALL?". Consolidado das 5 datas, sem a UBER":b===4||c===4?". 22/11/2025 sem a UBER (PDF: R$ 51,64)":"")}/>
+    <${KPI} label="Empresas ativas" tag=${b===ALL?"der":"real"} value=${fInt(D.emp[b])} delta=${pctVar(D.emp[b],D.emp[c])} sub=${(b===ALL?"Empresas distintas com movimento em pelo menos uma data. ":"")+"Mês: "+fInt(R.mes.empAssoc)+" associadas, "+fInt(R.mes.grupos)+" grupos"}/>
     <${KPI} label="Empresas sem movimentação no mês" tag="der" value=${fInt(R.cadastro.empresas-R.mes.empAssoc)} sub=${fInt(R.cadastro.empresas)+" cadastradas menos "+R.mes.empAssoc+" com movimento no mês"}/>
-    <${KPI} label="Usuários ativos" tag="real" value=${fInt(D.users[b])} delta=${pctVar(D.users[b],D.users[c])} sub=${"Mês: "+fInt(R.mes.usuarios)+". Base ativa cadastrada: "+fInt(R.cadastro.usuariosAtivos)}/>
-    <${KPI} label="Concentração nas 10 maiores" tag="der" value=${fPct(M.top10Share,false)} sub=${"Do volume de "+REPORT.dates[b].k}/>`;}
+    <${KPI} label="Usuários ativos" tag=${b===ALL?"nd":"real"} value=${fInt(D.users[b])} delta=${pctVar(D.users[b],D.users[c])} sub=${"Mês: "+fInt(R.mes.usuarios)+". Base ativa cadastrada: "+fInt(R.cadastro.usuariosAtivos)}/>
+    <${KPI} label="Concentração nas 10 maiores" tag="der" value=${fPct(M.top10Share,false)} sub=${"Do volume de "+(b===ALL?"todas as datas do relatório":REPORT.dates[b].k)}/>`;}
   else{const cur=M.cur.filter(r=>r.ok),pv=M.prev.filter(r=>r.ok);const v=cur.reduce((s,r)=>s+(r.valor||0),0),pvv=pv.reduce((s,r)=>s+(r.valor||0),0);
     const ea=new Set(cur.map(r=>r.empresa)).size,eap=new Set(pv.map(r=>r.empresa)).size;const all=new Set(M.cur.concat(M.prev).map(r=>r.empresa));
     const hist=M.companies.filter(r=>!r.present).length;const us=new Set(cur.map(r=>r.usuario).filter(Boolean)).size,usp=new Set(pv.map(r=>r.usuario).filter(Boolean)).size;
@@ -465,11 +477,12 @@ function TabExec({M,cfg,f}){const T=useContext(TokCtx);const D=REPORT.daily,R=RE
       ${pdf?html`<${PdfTable} titulo="Operações das Empresas" itens=${PDF.empresas} base=${b} comCount=${true} semBusca=${true} filtro=${e=>e.n===f.empresa}/>`:null}
       <div class="mini">Os indicadores abaixo continuam sendo da operação inteira: o PDF não abre receita, usuários e canais por empresa.</div></div>`;})():null}
   <div class="kpis">${kp}</div>
-  ${pdf&&M.semComp?html`<div class="note">Sem comparação: mostrando apenas <b>${M.baseLabel}</b>. Escolha uma data em "Comparar com" para ver as variações.</div>`:null}
+  ${pdf&&b===ALL?html`<div class="note">Todos: soma das 5 datas do relatório (${REPORT.dates.map(d=>d.k).join(", ")}). São recortes isolados, não uma série contínua, e incluem o feriado de 15/11. Usuários e motoristas não são somáveis entre datas; a receita de 22/11/2025 não vem no PDF.</div>`:null}
+  ${pdf&&M.semComp&&b!==ALL?html`<div class="note">Sem comparação: mostrando apenas <b>${M.baseLabel}</b>. Escolha uma data em "Comparar com" para ver as variações.</div>`:null}
   ${pdf&&!M.semComp?html`<div class="note">Comparação: <b>${M.baseLabel}</b> vs <b>${M.compLabel}</b>. ${M.sameWeekday?"Mesmo dia da semana.":"Atenção: dias da semana diferentes, a variação mistura efeito de calendário."} ${REPORT.dates[c]&&REPORT.dates[c].obs?REPORT.dates[c].obs+".":""} "Transações" (Count of Idtr.) não é o mesmo que corridas concluídas ou solicitações.</div>`:null}
   <div class="grid">
     <div class="card c7"><h2>Volume nos recortes do relatório</h2><div class="sub">Cinco datas isoladas que o PDF compara. Não é série contínua.</div>
-      <${VBar} data=${dailyData} dk="vol" name="Volume" fmt=${fBRL} labels=${true} colorBy=${d=>d.full.startsWith(REPORT.dates[b].k)?T.series:T.neutral}/></div>
+      <${VBar} data=${dailyData} dk="vol" name="Volume" fmt=${fBRL} labels=${true} colorBy=${d=>b===ALL||d.full.startsWith(REPORT.dates[b].k)?T.series:T.neutral}/></div>
     <div class="card c5"><h2>Transações e ticket nos recortes</h2><div class="sub">Ticket de 22/11/2025 ajustado para R$ 156,27.</div>
       <${VBar} data=${dailyData} dk="trans" name="Transações" fmt=${fInt} labels=${true} h=${150}/>
       <${VBar} data=${dailyData} dk="ticket" name="Ticket médio" fmt=${fBRL} labels=${true} h=${150} color=${T.series2}/></div>
@@ -509,12 +522,13 @@ function PdfTable({titulo,itens,base,comCount,filtro,semBusca}){const D=REPORT.d
   const cor=v=>!isNum(v)?"":v>0?"var(--good)":v>-10?"var(--warn)":"var(--bad)";
   const lista=itens.filter(e=>e.v[base]!=null||e.v.some(x=>x!=null)).filter(e=>!q||e.n.toLowerCase().includes(q.toLowerCase())).filter(e=>!filtro||filtro(e))
     .sort((a,b)=>{const va=a.v[base],vb=b.v[base];if(va!=null&&vb!=null)return vb-va;if(va!=null)return -1;if(vb!=null)return 1;return 0;});
-  const varOf=(e,i)=>{const b=e.v[base],x=e.v[i];if(x==null)return null;if(i===base)return 0;return b==null?-100:(b/x-1)*100;};
-  return html`<div class="card c12"><h2 class="ptitle">${titulo}</h2><div class="sub">Mesmo cabeçalho do relatório. Variação = data base (${D[base].k}) comparada a cada data, como no PDF.</div>
+  const todos=base===ALL;const cols=todos?[...D.map((d,i)=>i),ALL]:D.map((d,i)=>i);
+  const varOf=(e,i)=>{if(todos)return null;const b=e.v[base],x=e.v[i];if(x==null)return null;if(i===base)return 0;return b==null?-100:(b/x-1)*100;};
+  return html`<div class="card c12"><h2 class="ptitle">${titulo}</h2><div class="sub">${todos?"Mesmo cabeçalho do relatório, com a coluna Todos (soma das 5 datas). Variação não se aplica ao consolidado.":"Mesmo cabeçalho do relatório. Variação = data base ("+D[base].k+") comparada a cada data, como no PDF."}</div>
     ${semBusca?null:html`<div class="f w" style=${{maxWidth:"360px",flex:"none"}}><label for=${"pq"+titulo}>Pesquisar</label><input id=${"pq"+titulo} type="search" placeholder="Digite parte do nome" value=${q} onInput=${e=>setQ(e.target.value)}/></div>`}
-    <div class="tbl" style=${{maxHeight:"620px",overflow:"auto"}}><table class="pdft"><thead><tr><th></th><th></th>${D.map(d=>html`<th class="pc">${enDateDow(d.k)}</th>`)}</tr></thead>
+    <div class="tbl" style=${{maxHeight:"620px",overflow:"auto"}}><table class="pdft"><thead><tr><th></th><th></th>${cols.map(i=>html`<th class="pc">${i===ALL?"Todos":enDateDow(D[i].k)}</th>`)}</tr></thead>
     <tbody>${lista.map(e=>{const linhas=[["Volume",i=>e.v[i]!=null?fBRL(e.v[i]):""],["Variação",i=>{const v=varOf(e,i);return v==null?"":v.toFixed(2)+"%";}]].concat(comCount?[["Count of Idtr..",i=>e.t[i]!=null?fInt(e.t[i]):""]]:[]);
-      return linhas.map((l,j)=>html`<tr class=${(j===0?"pfirst ":"")+(j===1?"pzebra":"")}>${j===0?html`<td rowspan=${linhas.length} class="pname">${e.n}</td>`:null}<td class="plab">${l[0]}</td>${D.map((d,i)=>html`<td class="pc" style=${{color:i===base?"var(--fg)":cor(varOf(e,i))}}>${l[1](i)}</td>`)}</tr>`);})}</tbody></table></div>
+      return linhas.map((l,j)=>html`<tr class=${(j===0?"pfirst ":"")+(j===1?"pzebra":"")}>${j===0?html`<td rowspan=${linhas.length} class="pname">${e.n}</td>`:null}<td class="plab">${l[0]}</td>${cols.map(i=>html`<td class="pc" style=${{color:i===base||todos?"var(--fg)":cor(varOf(e,i)),fontWeight:i===ALL?600:null}}>${l[1](i)}</td>`)}</tr>`);})}</tbody></table></div>
     <div class="mini">${lista.length} linha(s). Count of Idtr.. = contagem de IDs de transação (não equivale a corridas concluídas). Cores: verde, a data base está acima; laranja, queda de até 10%; vermelho, queda maior.</div></div>`;}
 
 function TabRanking({M,f,setF,cfgBase}){const T=useContext(TokCtx);const [sort,setSort]=useState({k:"vol",d:-1});const [q,setQ]=useState("");
@@ -764,8 +778,8 @@ function App(){const T=useThemeTokens();
         ${nAct?html`<button class="btn" onClick=${()=>setF({empresa:"",segment:"",status:"",dow:"",band:"",grupo:"",canalCh:"",canalPg:""})}>Limpar ${nAct} filtro(s)</button>`:null}</div>
       ${tab!=="importar"&&tab!=="dados"?html`<div class="filters" role="group" aria-label="Filtros">
         ${csv?F("fw","Período",cfg.csvWin,v=>setCfg({...cfg,csvWin:v}),[["7","Últimos 7 dias"],["14","Últimos 14 dias"],["30","Últimos 30 dias"],["90","Últimos 90 dias"],["all","Todo o período"]])
-          :html`${F("fb","Data base",cfg.base,v=>setCfg({...cfg,base:+v,comp:cfg.comp>=0&&+v===cfg.comp?(+v===0?2:0):cfg.comp}),REPORT.dates.map((d,i)=>[i,enDateDow(d.k)]))}
-               ${F("fc","Comparar com",cfg.comp,v=>setCfg({...cfg,comp:+v}),[[-1,"Nenhum"],...REPORT.dates.map((d,i)=>[i,enDateDow(d.k)+(d.di===REPORT.dates[cfg.base].di?" • mesmo dia":"")]).filter(o=>o[0]!==cfg.base)])}`}
+          :html`${F("fb","Data base",cfg.base,v=>{v=+v;setCfg({...cfg,base:v,comp:v===ALL?-1:cfg.base===ALL?(v===0?2:0):(cfg.comp>=0&&v===cfg.comp?(v===0?2:0):cfg.comp)});},[[ALL,"Todos"],...REPORT.dates.map((d,i)=>[i,enDateDow(d.k)])])}
+               ${F("fc","Comparar com",cfg.comp,v=>setCfg({...cfg,comp:+v}),[[-1,"Nenhum"],...REPORT.dates.map((d,i)=>[i,enDateDow(d.k)+(cfg.base!==ALL&&d.di===REPORT.dates[cfg.base].di?" • mesmo dia":"")]).filter(o=>o[0]!==cfg.base)],cfg.base===ALL,"Com Todos na data base, o consolidado já inclui todas as datas")}`}
         <${BuscaEmpresa} names=${names} value=${f.empresa} onChange=${v=>setF({...f,empresa:v})}/>
         ${F("fg","Grupo econômico",f.grupo,v=>setF({...f,grupo:v}),[["","Todos"],...opts("grupo").map(o=>[o,o])],!csv||!imp.m.grupo,ndT)}
         ${F("fs","Segmento",f.segment,v=>setF({...f,segment:v}),[["","Todos"],["HEAD","HEAD"],["MEDIUM","MEDIUM"],["LONG TAIL","LONG TAIL"],["SEM","Sem volume na base"]])}
