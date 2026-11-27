@@ -1,0 +1,4469 @@
+{
+ "fonte": "Wappa - Resumo de Operações Diário (dashboard.pdf), e-mail de 27/11/2026 07:04",
+ "data_base": "2026-11-26",
+ "datas": [
+  {
+   "data": "2026-11-26",
+   "rotulo": "November 26 (Qui), 2026"
+  },
+  {
+   "data": "2026-11-25",
+   "rotulo": "November 25 (Qua), 2026"
+  },
+  {
+   "data": "2026-11-19",
+   "rotulo": "November 19 (Qui), 2026"
+  },
+  {
+   "data": "2026-10-26",
+   "rotulo": "October 26 (Seg), 2026"
+  },
+  {
+   "data": "2025-11-26",
+   "rotulo": "November 26 (Qua), 2025"
+  }
+ ],
+ "observacoes": "Valores na ordem de 'datas'. null = célula vazia no PDF. Variação em % como no PDF.",
+ "operacoes_das_empresas": [
+  {
+   "empresa": "TECH",
+   "Volume": [
+    43761.97,
+    40983.42,
+    43222.8,
+    30261.72,
+    5449.17
+   ],
+   "Variação": [
+    0.0,
+    6.78,
+    1.25,
+    44.61,
+    703.09
+   ],
+   "Count of Idtr..": [
+    247,
+    274,
+    223,
+    180,
+    45
+   ]
+  },
+  {
+   "empresa": "ROCHE (PESQUISA CLINICA) (WAPPA)",
+   "Volume": [
+    37078.74,
+    44547.18,
+    25657.76,
+    41528.07,
+    24296.57
+   ],
+   "Variação": [
+    0.0,
+    -16.77,
+    44.51,
+    -10.71,
+    52.61
+   ],
+   "Count of Idtr..": [
+    48,
+    41,
+    45,
+    40,
+    42
+   ]
+  },
+  {
+   "empresa": "BANCO ITAU UNIBANCO (VOLL)",
+   "Volume": [
+    15875.55,
+    19639.51,
+    13001.55,
+    8560.3,
+    20178.52
+   ],
+   "Variação": [
+    0.0,
+    -19.17,
+    22.11,
+    85.46,
+    -21.32
+   ],
+   "Count of Idtr..": [
+    99,
+    112,
+    76,
+    35,
+    140
+   ]
+  },
+  {
+   "empresa": "BOEHRINGER INGELHEIM DO BRASIL( Expense)",
+   "Volume": [
+    14666.4,
+    196.75,
+    5750.5,
+    6817.5,
+    1767.45
+   ],
+   "Variação": [
+    0.0,
+    7354.33,
+    155.05,
+    115.13,
+    729.81
+   ],
+   "Count of Idtr..": [
+    87,
+    1,
+    6,
+    22,
+    5
+   ]
+  },
+  {
+   "empresa": "SPID",
+   "Volume": [
+    12042.39,
+    8974.98,
+    8610.53,
+    12018.59,
+    11592.36
+   ],
+   "Variação": [
+    0.0,
+    34.18,
+    39.86,
+    0.2,
+    3.88
+   ],
+   "Count of Idtr..": [
+    166,
+    133,
+    135,
+    178,
+    142
+   ]
+  },
+  {
+   "empresa": "UNIPAR CARBOCLORO S.A.voll",
+   "Volume": [
+    4827.33,
+    1184.35,
+    1773.5,
+    773.13,
+    3120.65
+   ],
+   "Variação": [
+    0.0,
+    307.59,
+    172.19,
+    524.39,
+    54.69
+   ],
+   "Count of Idtr..": [
+    9,
+    6,
+    8,
+    6,
+    19
+   ]
+  },
+  {
+   "empresa": "HSJ (EXPENSE)",
+   "Volume": [
+    4039.73,
+    3467.74,
+    534.27,
+    1408.56,
+    2815.31
+   ],
+   "Variação": [
+    0.0,
+    16.49,
+    656.12,
+    186.8,
+    43.49
+   ],
+   "Count of Idtr..": [
+    29,
+    26,
+    10,
+    16,
+    26
+   ]
+  },
+  {
+   "empresa": "SAMSUNG..",
+   "Volume": [
+    3600.46,
+    1080.59,
+    2047.94,
+    417.4,
+    1935.7
+   ],
+   "Variação": [
+    0.0,
+    233.19,
+    75.81,
+    762.59,
+    86.0
+   ],
+   "Count of Idtr..": [
+    10,
+    7,
+    7,
+    4,
+    11
+   ]
+  },
+  {
+   "empresa": "LABI EXAMES LTDA",
+   "Volume": [
+    3097.85,
+    4304.8,
+    null,
+    5043.25,
+    2487.4
+   ],
+   "Variação": [
+    0.0,
+    -28.04,
+    null,
+    -38.57,
+    24.54
+   ],
+   "Count of Idtr..": [
+    10,
+    13,
+    null,
+    12,
+    9
+   ]
+  },
+  {
+   "empresa": "NOVA TRANS PORTADORA DO SUDES..",
+   "Volume": [
+    2974.11,
+    2946.88,
+    2858.99,
+    1948.0,
+    2397.7
+   ],
+   "Variação": [
+    0.0,
+    0.92,
+    4.03,
+    52.68,
+    24.04
+   ],
+   "Count of Idtr..": [
+    13,
+    14,
+    13,
+    10,
+    14
+   ]
+  },
+  {
+   "empresa": "GRUPO BRASANITAS.",
+   "Volume": [
+    2548.8,
+    2162.52,
+    785.92,
+    1054.35,
+    2173.5
+   ],
+   "Variação": [
+    0.0,
+    17.86,
+    224.31,
+    141.74,
+    17.27
+   ],
+   "Count of Idtr..": [
+    17,
+    15,
+    6,
+    7,
+    14
+   ]
+  },
+  {
+   "empresa": "STATOIL BRASIL OLEO E GAS",
+   "Volume": [
+    2540.55,
+    2380.29,
+    5655.98,
+    1676.44,
+    1013.22
+   ],
+   "Variação": [
+    0.0,
+    6.73,
+    -55.08,
+    51.54,
+    150.74
+   ],
+   "Count of Idtr..": [
+    21,
+    11,
+    48,
+    13,
+    12
+   ]
+  },
+  {
+   "empresa": "COCA COLA JURUBATUBA. (EXPENSE)",
+   "Volume": [
+    2281.0,
+    1900.5,
+    2176.0,
+    742.25,
+    664.5
+   ],
+   "Variação": [
+    0.0,
+    20.02,
+    4.83,
+    207.31,
+    243.27
+   ],
+   "Count of Idtr..": [
+    12,
+    10,
+    12,
+    7,
+    6
+   ]
+  },
+  {
+   "empresa": "IDEMIA DO BRASIL",
+   "Volume": [
+    2251.3,
+    931.1,
+    2005.35,
+    613.45,
+    197.0
+   ],
+   "Variação": [
+    0.0,
+    141.79,
+    12.26,
+    266.99,
+    1042.79
+   ],
+   "Count of Idtr..": [
+    14,
+    7,
+    13,
+    4,
+    2
+   ]
+  },
+  {
+   "empresa": "PERIODICAL TIME",
+   "Volume": [
+    2000.68,
+    1762.34,
+    884.67,
+    1093.23,
+    1153.11
+   ],
+   "Variação": [
+    0.0,
+    13.52,
+    126.15,
+    83.01,
+    73.5
+   ],
+   "Count of Idtr..": [
+    11,
+    11,
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "empresa": "TUPY",
+   "Volume": [
+    1938.37,
+    1127.5,
+    1723.12,
+    3111.87,
+    9073.71
+   ],
+   "Variação": [
+    0.0,
+    71.92,
+    12.49,
+    -37.71,
+    -78.64
+   ],
+   "Count of Idtr..": [
+    13,
+    2,
+    10,
+    14,
+    56
+   ]
+  },
+  {
+   "empresa": "BOSCH (expense)",
+   "Volume": [
+    1808.75,
+    2120.25,
+    948.5,
+    1978.5,
+    null
+   ],
+   "Variação": [
+    0.0,
+    -14.69,
+    90.7,
+    -8.58,
+    null
+   ],
+   "Count of Idtr..": [
+    5,
+    3,
+    2,
+    2,
+    null
+   ]
+  },
+  {
+   "empresa": "NEOENERGIA. (EXPENSE)",
+   "Volume": [
+    1531.6,
+    802.0,
+    3018.46,
+    2615.66,
+    1265.3
+   ],
+   "Variação": [
+    0.0,
+    90.97,
+    -49.26,
+    -41.44,
+    21.05
+   ],
+   "Count of Idtr..": [
+    6,
+    3,
+    13,
+    10,
+    5
+   ]
+  },
+  {
+   "empresa": "PFIZER..(INO..",
+   "Volume": [
+    1486.55,
+    145.92,
+    304.5,
+    196.37,
+    1220.46
+   ],
+   "Variação": [
+    0.0,
+    918.74,
+    388.19,
+    657.01,
+    21.8
+   ],
+   "Count of Idtr..": [
+    11,
+    2,
+    3,
+    2,
+    10
+   ]
+  },
+  {
+   "empresa": "DIEBOLD PIE (EXPENSE)",
+   "Volume": [
+    1109.48,
+    575.75,
+    154.5,
+    568.8,
+    1830.21
+   ],
+   "Variação": [
+    0.0,
+    92.7,
+    618.11,
+    95.06,
+    -39.38
+   ],
+   "Count of Idtr..": [
+    6,
+    3,
+    2,
+    4,
+    13
+   ]
+  },
+  {
+   "empresa": "NOVARTIS - TERCEIROS.",
+   "Volume": [
+    992.57,
+    223.7,
+    309.9,
+    45.0,
+    120.2
+   ],
+   "Variação": [
+    0.0,
+    343.71,
+    220.29,
+    2105.71,
+    725.77
+   ],
+   "Count of Idtr..": [
+    16,
+    2,
+    5,
+    1,
+    2
+   ]
+  },
+  {
+   "empresa": "ROJO ENTRET ENIMENTO(E XPENSE)",
+   "Volume": [
+    948.9,
+    217.6,
+    885.0,
+    109.7,
+    401.7
+   ],
+   "Variação": [
+    0.0,
+    336.08,
+    7.22,
+    765.0,
+    136.22
+   ],
+   "Count of Idtr..": [
+    5,
+    1,
+    5,
+    1,
+    2
+   ]
+  },
+  {
+   "empresa": "EMBRACO.",
+   "Volume": [
+    927.75,
+    9632.75,
+    null,
+    5760.68,
+    1153.91
+   ],
+   "Variação": [
+    0.0,
+    -90.37,
+    null,
+    -83.9,
+    -19.6
+   ],
+   "Count of Idtr..": [
+    1,
+    21,
+    null,
+    13,
+    1
+   ]
+  },
+  {
+   "empresa": "CEG - Naturgy (MOBI CITY)",
+   "Volume": [
+    703.7,
+    56.05,
+    331.1,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    1155.49,
+    112.53,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    3,
+    1,
+    2,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "CNC (expense)",
+   "Volume": [
+    651.8,
+    994.6,
+    539.29,
+    325.6,
+    1038.26
+   ],
+   "Variação": [
+    0.0,
+    -34.47,
+    20.86,
+    100.18,
+    -37.22
+   ],
+   "Count of Idtr..": [
+    4,
+    6,
+    3,
+    2,
+    10
+   ]
+  },
+  {
+   "empresa": "THOMSON REUTERS (EXPENSE)",
+   "Volume": [
+    642.0,
+    228.6,
+    49.24,
+    9939.5,
+    684.72
+   ],
+   "Variação": [
+    0.0,
+    180.84,
+    1203.82,
+    -93.54,
+    -6.24
+   ],
+   "Count of Idtr..": [
+    4,
+    4,
+    1,
+    14,
+    2
+   ]
+  },
+  {
+   "empresa": "NOVARTIS GUIDO CALOI/ Sto Amaro .",
+   "Volume": [
+    567.0,
+    1101.33,
+    411.0,
+    579.09,
+    933.3
+   ],
+   "Variação": [
+    0.0,
+    -48.52,
+    37.96,
+    -2.09,
+    -39.25
+   ],
+   "Count of Idtr..": [
+    2,
+    4,
+    2,
+    4,
+    4
+   ]
+  },
+  {
+   "empresa": "FAPES (expense)",
+   "Volume": [
+    559.2,
+    989.15,
+    505.76,
+    1291.7,
+    288.07
+   ],
+   "Variação": [
+    0.0,
+    -43.47,
+    10.57,
+    -56.71,
+    94.12
+   ],
+   "Count of Idtr..": [
+    4,
+    9,
+    6,
+    11,
+    4
+   ]
+  },
+  {
+   "empresa": "merck (VOLL)",
+   "Volume": [
+    505.58,
+    266.85,
+    null,
+    402.05,
+    null
+   ],
+   "Variação": [
+    0.0,
+    89.46,
+    null,
+    25.75,
+    null
+   ],
+   "Count of Idtr..": [
+    5,
+    3,
+    null,
+    2,
+    null
+   ]
+  },
+  {
+   "empresa": "RIACHUELO (EXPENSE)",
+   "Volume": [
+    471.0,
+    null,
+    161.7,
+    170.25,
+    1740.95
+   ],
+   "Variação": [
+    0.0,
+    null,
+    191.28,
+    176.65,
+    -72.95
+   ],
+   "Count of Idtr..": [
+    2,
+    null,
+    1,
+    1,
+    12
+   ]
+  },
+  {
+   "empresa": "FIEC MOBICITY.",
+   "Volume": [
+    469.28,
+    205.64,
+    69.57,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    128.2,
+    574.54,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    4,
+    2,
+    1,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "TELXIUS CABLE BRASIL LTDA. (Stuo)",
+   "Volume": [
+    393.9,
+    1118.96,
+    139.15,
+    1052.6,
+    null
+   ],
+   "Variação": [
+    0.0,
+    -64.8,
+    183.08,
+    -62.58,
+    null
+   ],
+   "Count of Idtr..": [
+    2,
+    6,
+    2,
+    3,
+    null
+   ]
+  },
+  {
+   "empresa": "QUEPAR.",
+   "Volume": [
+    316.07,
+    372.64,
+    189.07,
+    1503.5,
+    544.1
+   ],
+   "Variação": [
+    0.0,
+    -15.18,
+    67.17,
+    -78.98,
+    -41.91
+   ],
+   "Count of Idtr..": [
+    1,
+    2,
+    1,
+    2,
+    5
+   ]
+  },
+  {
+   "empresa": "Puig Brasil (STUO)",
+   "Volume": [
+    310.11,
+    330.42,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    -6.15,
+    null,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    2,
+    2,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "TELEFONICA GLOBAL SOLUTIONS BRASIL LTDA",
+   "Volume": [
+    293.8,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    2,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "MSC MEDITER RANEAN SSZ.. . (ex..",
+   "Volume": [
+    229.35,
+    299.25,
+    185.4,
+    40.1,
+    123.9
+   ],
+   "Variação": [
+    0.0,
+    -23.36,
+    23.71,
+    471.95,
+    85.11
+   ],
+   "Count of Idtr..": [
+    5,
+    7,
+    6,
+    2,
+    2
+   ]
+  },
+  {
+   "empresa": "ADD SOLUCOES EM MEIOS DE PAGAMENTO..",
+   "Volume": [
+    185.15,
+    388.5,
+    160.3,
+    171.51,
+    227.25
+   ],
+   "Variação": [
+    0.0,
+    -52.34,
+    15.5,
+    7.95,
+    -18.53
+   ],
+   "Count of Idtr..": [
+    3,
+    6,
+    2,
+    3,
+    3
+   ]
+  },
+  {
+   "empresa": "telxius",
+   "Volume": [
+    170.05,
+    null,
+    null,
+    null,
+    241.52
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    -29.59
+   ],
+   "Count of Idtr..": [
+    1,
+    null,
+    null,
+    null,
+    2
+   ]
+  },
+  {
+   "empresa": "RENOVA ENERGIA (eXPENSE)",
+   "Volume": [
+    151.49,
+    43.83,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    245.63,
+    null,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    2,
+    1,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "SOTREQ.",
+   "Volume": [
+    142.75,
+    null,
+    null,
+    null,
+    69.35
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    105.84
+   ],
+   "Count of Idtr..": [
+    1,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "SESI - DEPART AMENTO REGI ONAL..",
+   "Volume": [
+    126.72,
+    54.79,
+    507.26,
+    124.72,
+    null
+   ],
+   "Variação": [
+    0.0,
+    131.28,
+    -75.02,
+    1.6,
+    null
+   ],
+   "Count of Idtr..": [
+    3,
+    2,
+    7,
+    4,
+    null
+   ]
+  },
+  {
+   "empresa": "ALLIANZ SEGUROS S/A. .(Expense)",
+   "Volume": [
+    126.25,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    2,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "ESPORTE CLUBE PINHEIROS",
+   "Volume": [
+    109.1,
+    null,
+    51.34,
+    null,
+    389.7
+   ],
+   "Variação": [
+    0.0,
+    null,
+    112.5,
+    null,
+    -72.0
+   ],
+   "Count of Idtr..": [
+    1,
+    null,
+    1,
+    null,
+    4
+   ]
+  },
+  {
+   "empresa": "KINOPLEX. (Expense)",
+   "Volume": [
+    68.75,
+    null,
+    132.13,
+    146.05,
+    360.05
+   ],
+   "Variação": [
+    0.0,
+    null,
+    -47.97,
+    -52.93,
+    -80.91
+   ],
+   "Count of Idtr..": [
+    1,
+    null,
+    2,
+    1,
+    6
+   ]
+  },
+  {
+   "empresa": "CLARO S/A (VOLL)",
+   "Volume": [
+    66.8,
+    55.75,
+    null,
+    156.5,
+    1050.78
+   ],
+   "Variação": [
+    0.0,
+    19.82,
+    null,
+    -57.32,
+    -93.64
+   ],
+   "Count of Idtr..": [
+    1,
+    1,
+    null,
+    3,
+    8
+   ]
+  },
+  {
+   "empresa": "PATRYS INVE STIMENTOS I MOBILI..",
+   "Volume": [
+    62.05,
+    201.55,
+    null,
+    73.6,
+    null
+   ],
+   "Variação": [
+    0.0,
+    -69.21,
+    null,
+    -15.69,
+    null
+   ],
+   "Count of Idtr..": [
+    1,
+    1,
+    null,
+    2,
+    null
+   ]
+  },
+  {
+   "empresa": "PROJETO FIELD SUPPORT (Expense)",
+   "Volume": [
+    37.75,
+    null,
+    36.55,
+    313.5,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    3.28,
+    -87.96,
+    null
+   ],
+   "Count of Idtr..": [
+    1,
+    null,
+    1,
+    2,
+    null
+   ]
+  },
+  {
+   "empresa": "DROGARIA ROSARIO.",
+   "Volume": [
+    26.75,
+    26.75,
+    26.75,
+    null,
+    125.97
+   ],
+   "Variação": [
+    0.0,
+    0.0,
+    0.0,
+    null,
+    -78.76
+   ],
+   "Count of Idtr..": [
+    1,
+    1,
+    1,
+    null,
+    2
+   ]
+  },
+  {
+   "empresa": "APERAM SOUTH AMERICA. (EXPENSE)",
+   "Volume": [
+    null,
+    1127.0,
+    null,
+    143.45,
+    1761.6
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    -100.0,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    4,
+    null,
+    2,
+    5
+   ]
+  },
+  {
+   "empresa": "ATENTO BRASIL",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    150.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "BANCO ARBI (EXPENSE)",
+   "Volume": [
+    null,
+    108.5,
+    null,
+    null,
+    135.75
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    2,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "BENX EMPRE ENDIMENTOS IMOBILI..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    165.5
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    2
+   ]
+  },
+  {
+   "empresa": "CAPROCK CO MUNICACOES (expense)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    706.5
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    2
+   ]
+  },
+  {
+   "empresa": "CENTRO DE EXTENSÃO UNIVERSITÁ..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    280.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "COMPANHIA HIDRELETRIC A TELES..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    65.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "EDF - EN DO BRASIL",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    111.0
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "EDITORA SANAR (MOBI-CITY)",
+   "Volume": [
+    null,
+    14.65,
+    48.0,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    1,
+    2,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "EMPRESA DE NAVEGACAO ELCANO S/A (STUO)",
+   "Volume": [
+    null,
+    null,
+    null,
+    122.85,
+    182.65
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    1,
+    3
+   ]
+  },
+  {
+   "empresa": "ENEL ENDESA...( Wappa)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    492.73
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    5
+   ]
+  },
+  {
+   "empresa": "FIEMG (MOBI-CITY)",
+   "Volume": [
+    null,
+    186.45,
+    null,
+    41.75,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    -100.0,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    1,
+    null,
+    1,
+    null
+   ]
+  },
+  {
+   "empresa": "FLEURY MEDICINA E SAUDE ENFERMAGE..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    137.31
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    3
+   ]
+  },
+  {
+   "empresa": "INOVADORA 2A - WAPPA..",
+   "Volume": [
+    null,
+    171.75,
+    null,
+    null,
+    600.75
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    1,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "KUEHNE NAGEL (EXPENSE)",
+   "Volume": [
+    null,
+    null,
+    null,
+    4888.86,
+    1067.52
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    48,
+    32
+   ]
+  },
+  {
+   "empresa": "MICHELIN (VOLL)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    2353.1
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    18
+   ]
+  },
+  {
+   "empresa": "NATURA COSMETICOS. ..(expense)",
+   "Volume": [
+    null,
+    null,
+    null,
+    1132.75,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    1,
+    null
+   ]
+  },
+  {
+   "empresa": "PATRYS INVE STIMENTOS I MOBILI..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    66.7
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    2
+   ]
+  },
+  {
+   "empresa": "Pfizer Brasil Ltda - Itapevi (EXPENSE)",
+   "Volume": [
+    null,
+    null,
+    370.5,
+    354.1,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    1,
+    1,
+    null
+   ]
+  },
+  {
+   "empresa": "PRIME AVIATI ON PARTICIPA COES..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    138.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "PRODUTOS ROCHE (WAPPA)",
+   "Volume": [
+    null,
+    null,
+    194.8,
+    null,
+    280.75
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    1,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "PROSEGUR BRASIL.",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    196.58
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    2
+   ]
+  },
+  {
+   "empresa": "PUC-RIO.",
+   "Volume": [
+    null,
+    128.07,
+    null,
+    133.05,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    -100.0,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    1,
+    null,
+    1,
+    null
+   ]
+  },
+  {
+   "empresa": "PUIG BRASIL (EXPENSe)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    508.19
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    3
+   ]
+  },
+  {
+   "empresa": "QUALITEC BRASIL",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    114.17
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    2
+   ]
+  },
+  {
+   "empresa": "RADIO E TELEVISAO RECORD S.A..( expense)..",
+   "Volume": [
+    null,
+    null,
+    377.55,
+    1921.65,
+    1293.18
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    3,
+    5,
+    7
+   ]
+  },
+  {
+   "empresa": "RADIX ENGENHARIA (Expense)",
+   "Volume": [
+    null,
+    80.2,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    1,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "REFINARIA DE MANAUS S.A. (mobi city)",
+   "Volume": [
+    null,
+    null,
+    89.25,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    1,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "SBEM NACIONAL (EXPENSE)",
+   "Volume": [
+    null,
+    493.5,
+    2617.5,
+    221.75,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    -100.0,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    2,
+    6,
+    1,
+    null
+   ]
+  },
+  {
+   "empresa": "SC CAPROCK SERVIÇOS DE COMUNICAÇ..",
+   "Volume": [
+    null,
+    933.85,
+    410.2,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    5,
+    3,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "SEBRAE (MOBI)",
+   "Volume": [
+    null,
+    45.78,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    1,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "SESC/AR/CE (MOBICITY)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    127.18
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    3
+   ]
+  },
+  {
+   "empresa": "SIGNO PROPE RTIES INVESTI MENT..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    274.17
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    3
+   ]
+  },
+  {
+   "empresa": "Sodexo Do Brasil Comercial S.a. (VOLL)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    2204.4
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    3
+   ]
+  },
+  {
+   "empresa": "TAO (STUO)",
+   "Volume": [
+    null,
+    52.05,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    1,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "TECHNIPFM..",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    17992.48
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    166
+   ]
+  },
+  {
+   "empresa": "TRENCH ROSSI E WATANABE ADVOGADOS.",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    124.55
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "TRIPEE",
+   "Volume": [
+    null,
+    null,
+    23.1,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    null
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    1,
+    null,
+    null
+   ]
+  },
+  {
+   "empresa": "TUV RHEINLAND DO BRASIL..( expense)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    500.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1
+   ]
+  },
+  {
+   "empresa": "UBER",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    58452.68
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    1524
+   ]
+  },
+  {
+   "empresa": "VLI MULTIMODAL (INOVADORA)",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    2959.45
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    13
+   ]
+  },
+  {
+   "empresa": "WEXP SOLUCOES DIGITAIS LTDA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    532.5
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ],
+   "Count of Idtr..": [
+    null,
+    null,
+    null,
+    null,
+    2
+   ]
+  }
+ ],
+ "operacoes_das_cidades": [
+  {
+   "cidade": "RIO DE JANEIRO",
+   "Volume": [
+    31539.89,
+    24796.66,
+    26541.21,
+    20990.29,
+    68045.54
+   ],
+   "Variação": [
+    0.0,
+    27.19,
+    18.83,
+    50.26,
+    -53.65
+   ]
+  },
+  {
+   "cidade": "SAO JOAO DE MERITI",
+   "Volume": [
+    20359.29,
+    16087.12,
+    23169.05,
+    16903.28,
+    8036.78
+   ],
+   "Variação": [
+    0.0,
+    26.56,
+    -12.13,
+    20.45,
+    153.33
+   ]
+  },
+  {
+   "cidade": "SAO PAULO",
+   "Volume": [
+    19873.98,
+    19301.18,
+    13446.63,
+    20140.03,
+    23138.52
+   ],
+   "Variação": [
+    0.0,
+    2.97,
+    47.8,
+    -1.32,
+    -14.11
+   ]
+  },
+  {
+   "cidade": "OSASCO",
+   "Volume": [
+    15112.88,
+    12532.0,
+    10930.4,
+    15765.38,
+    1689.0
+   ],
+   "Variação": [
+    0.0,
+    20.59,
+    38.26,
+    -4.14,
+    794.78
+   ]
+  },
+  {
+   "cidade": "Null",
+   "Volume": [
+    13222.22,
+    7138.16,
+    10008.7,
+    10389.24,
+    14459.85
+   ],
+   "Variação": [
+    0.0,
+    85.23,
+    32.11,
+    27.27,
+    -8.56
+   ]
+  },
+  {
+   "cidade": "FORTALEZA",
+   "Volume": [
+    8825.34,
+    6116.66,
+    2835.93,
+    4776.46,
+    8604.9
+   ],
+   "Variação": [
+    0.0,
+    44.28,
+    211.2,
+    84.77,
+    2.56
+   ]
+  },
+  {
+   "cidade": "GOIANIA",
+   "Volume": [
+    7983.83,
+    14625.91,
+    1593.33,
+    9183.57,
+    7623.91
+   ],
+   "Variação": [
+    0.0,
+    -45.41,
+    401.08,
+    -13.06,
+    4.72
+   ]
+  },
+  {
+   "cidade": "CAMPOS DOS GOYTACAZES",
+   "Volume": [
+    4016.62,
+    4891.04,
+    2335.92,
+    2901.19,
+    1824.07
+   ],
+   "Variação": [
+    0.0,
+    -17.88,
+    71.95,
+    38.45,
+    120.2
+   ]
+  },
+  {
+   "cidade": "BELO HORIZONTE",
+   "Volume": [
+    3745.55,
+    2300.69,
+    3291.9,
+    843.13,
+    3240.49
+   ],
+   "Variação": [
+    0.0,
+    62.8,
+    13.78,
+    344.24,
+    15.59
+   ]
+  },
+  {
+   "cidade": "AMERICANA",
+   "Volume": [
+    3568.75,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "COTIA",
+   "Volume": [
+    2870.45,
+    1346.87,
+    2301.87,
+    1038.8,
+    772.5
+   ],
+   "Variação": [
+    0.0,
+    113.12,
+    24.7,
+    176.32,
+    271.58
+   ]
+  },
+  {
+   "cidade": "JOINVILLE",
+   "Volume": [
+    2866.12,
+    10760.25,
+    1723.12,
+    8872.55,
+    8865.85
+   ],
+   "Variação": [
+    0.0,
+    -73.36,
+    66.33,
+    -67.7,
+    -67.67
+   ]
+  },
+  {
+   "cidade": "ITAPECERICA DA SERRA",
+   "Volume": [
+    2855.41,
+    414.99,
+    1209.8,
+    514.97,
+    190.5
+   ],
+   "Variação": [
+    0.0,
+    588.07,
+    136.02,
+    454.48,
+    1398.9
+   ]
+  },
+  {
+   "cidade": "NITEROI",
+   "Volume": [
+    2830.87,
+    1865.43,
+    360.48,
+    508.2,
+    1624.8
+   ],
+   "Variação": [
+    0.0,
+    51.75,
+    685.31,
+    457.04,
+    74.23
+   ]
+  },
+  {
+   "cidade": "BELEM",
+   "Volume": [
+    2699.57,
+    1474.98,
+    862.2,
+    530.33,
+    1310.33
+   ],
+   "Variação": [
+    0.0,
+    83.02,
+    213.1,
+    409.04,
+    106.02
+   ]
+  },
+  {
+   "cidade": "PORTO ALEGRE",
+   "Volume": [
+    2281.45,
+    11587.5,
+    6821.49,
+    9374.0,
+    780.02
+   ],
+   "Variação": [
+    0.0,
+    -80.31,
+    -66.55,
+    -75.66,
+    192.49
+   ]
+  },
+  {
+   "cidade": "RIO DAS OSTRAS",
+   "Volume": [
+    2132.25,
+    null,
+    null,
+    265.25,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    703.86,
+    null
+   ]
+  },
+  {
+   "cidade": "APARECIDA DE GOIANIA",
+   "Volume": [
+    1947.38,
+    null,
+    null,
+    null,
+    379.54
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    413.09
+   ]
+  },
+  {
+   "cidade": "GOIANIRA",
+   "Volume": [
+    1751.16,
+    null,
+    1119.22,
+    1302.49,
+    557.7
+   ],
+   "Variação": [
+    0.0,
+    null,
+    56.46,
+    34.45,
+    214.0
+   ]
+  },
+  {
+   "cidade": "GOIÂNIA",
+   "Volume": [
+    1715.73,
+    1976.23,
+    2496.39,
+    1795.8,
+    6887.82
+   ],
+   "Variação": [
+    0.0,
+    -13.18,
+    -31.27,
+    -4.46,
+    -75.09
+   ]
+  },
+  {
+   "cidade": "RIO GRANDE DA SERRA",
+   "Volume": [
+    1219.15,
+    1184.35,
+    758.25,
+    773.13,
+    1579.4
+   ],
+   "Variação": [
+    0.0,
+    2.94,
+    60.78,
+    57.69,
+    -22.81
+   ]
+  },
+  {
+   "cidade": "São Paulo",
+   "Volume": [
+    1140.59,
+    1434.85,
+    2901.17,
+    1036.27,
+    1591.67
+   ],
+   "Variação": [
+    0.0,
+    -20.51,
+    -60.69,
+    10.07,
+    -28.34
+   ]
+  },
+  {
+   "cidade": "NATAL",
+   "Volume": [
+    1107.1,
+    295.65,
+    18.25,
+    170.25,
+    645.25
+   ],
+   "Variação": [
+    0.0,
+    274.46,
+    5966.3,
+    550.28,
+    71.58
+   ]
+  },
+  {
+   "cidade": "Santos",
+   "Volume": [
+    1091.9,
+    null,
+    null,
+    null,
+    237.95
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    358.88
+   ]
+  },
+  {
+   "cidade": "VITORIA",
+   "Volume": [
+    939.82,
+    1685.95,
+    338.8,
+    1413.53,
+    551.75
+   ],
+   "Variação": [
+    0.0,
+    -44.26,
+    177.4,
+    -33.51,
+    70.33
+   ]
+  },
+  {
+   "cidade": "JUNDIAI",
+   "Volume": [
+    865.39,
+    724.0,
+    411.0,
+    401.5,
+    961.25
+   ],
+   "Variação": [
+    0.0,
+    19.53,
+    110.56,
+    115.54,
+    -9.97
+   ]
+  },
+  {
+   "cidade": "BRASILIA",
+   "Volume": [
+    835.56,
+    418.61,
+    1134.98,
+    3446.33,
+    7589.98
+   ],
+   "Variação": [
+    0.0,
+    99.6,
+    -26.38,
+    -75.76,
+    -88.99
+   ]
+  },
+  {
+   "cidade": "SALVADOR",
+   "Volume": [
+    824.27,
+    1874.37,
+    266.22,
+    3031.38,
+    5062.21
+   ],
+   "Variação": [
+    0.0,
+    -56.02,
+    209.62,
+    -72.81,
+    -83.72
+   ]
+  },
+  {
+   "cidade": "GUARULHOS",
+   "Volume": [
+    773.38,
+    1791.66,
+    1260.3,
+    1079.18,
+    719.6
+   ],
+   "Variação": [
+    0.0,
+    -56.83,
+    -38.64,
+    -28.34,
+    7.47
+   ]
+  },
+  {
+   "cidade": "BARUERI",
+   "Volume": [
+    763.23,
+    1094.09,
+    null,
+    166.75,
+    114.0
+   ],
+   "Variação": [
+    0.0,
+    -30.24,
+    null,
+    357.71,
+    569.5
+   ]
+  },
+  {
+   "cidade": "DIADEMA",
+   "Volume": [
+    753.23,
+    1201.04,
+    410.54,
+    1062.07,
+    116.75
+   ],
+   "Variação": [
+    0.0,
+    -37.29,
+    83.47,
+    -29.08,
+    545.16
+   ]
+  },
+  {
+   "cidade": "SUZANO",
+   "Volume": [
+    701.0,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "SANTA RITA DO SAPUCAI",
+   "Volume": [
+    694.0,
+    607.25,
+    607.25,
+    520.5,
+    428.75
+   ],
+   "Variação": [
+    0.0,
+    14.29,
+    14.29,
+    33.33,
+    61.87
+   ]
+  },
+  {
+   "cidade": "LAGOA SANTA",
+   "Volume": [
+    684.0,
+    307.0,
+    550.25,
+    173.5,
+    274.75
+   ],
+   "Variação": [
+    0.0,
+    122.8,
+    24.31,
+    294.24,
+    148.95
+   ]
+  },
+  {
+   "cidade": "NOVA IGUAÇU",
+   "Volume": [
+    616.75,
+    565.55,
+    1307.61,
+    54.58,
+    578.48
+   ],
+   "Variação": [
+    0.0,
+    9.05,
+    -52.83,
+    1029.99,
+    6.62
+   ]
+  },
+  {
+   "cidade": "RECIFE",
+   "Volume": [
+    478.03,
+    null,
+    898.76,
+    1959.58,
+    1486.29
+   ],
+   "Variação": [
+    0.0,
+    null,
+    -46.81,
+    -75.61,
+    -67.84
+   ]
+  },
+  {
+   "cidade": "CURITIBA",
+   "Volume": [
+    372.4,
+    783.03,
+    549.2,
+    58.45,
+    1427.01
+   ],
+   "Variação": [
+    0.0,
+    -52.44,
+    -32.19,
+    537.13,
+    -73.9
+   ]
+  },
+  {
+   "cidade": "Rio de Janeiro",
+   "Volume": [
+    369.15,
+    440.35,
+    62.05,
+    64.05,
+    1215.79
+   ],
+   "Variação": [
+    0.0,
+    -16.17,
+    494.92,
+    476.35,
+    -69.64
+   ]
+  },
+  {
+   "cidade": "SAO JOSE DE RIBAMAR",
+   "Volume": [
+    363.0,
+    null,
+    null,
+    null,
+    226.1
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    60.55
+   ]
+  },
+  {
+   "cidade": "CONTAGEM",
+   "Volume": [
+    349.83,
+    null,
+    null,
+    188.3,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    85.78,
+    null
+   ]
+  },
+  {
+   "cidade": "SAO GONÇALO",
+   "Volume": [
+    339.96,
+    null,
+    null,
+    null,
+    1012.35
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    -66.42
+   ]
+  },
+  {
+   "cidade": "SABARA",
+   "Volume": [
+    333.75,
+    null,
+    461.75,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    -27.72,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "SOROCABA",
+   "Volume": [
+    322.15,
+    null,
+    null,
+    680.95,
+    20.59
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    -52.69,
+    1464.59
+   ]
+  },
+  {
+   "cidade": "SERRA",
+   "Volume": [
+    310.11,
+    1048.21,
+    41.33,
+    200.6,
+    491.06
+   ],
+   "Variação": [
+    0.0,
+    -70.42,
+    650.33,
+    54.59,
+    -36.85
+   ]
+  },
+  {
+   "cidade": "CABO DE SANTO AGOSTINHO",
+   "Volume": [
+    309.27,
+    null,
+    908.51,
+    173.3,
+    169.65
+   ],
+   "Variação": [
+    0.0,
+    null,
+    -65.96,
+    78.46,
+    82.3
+   ]
+  },
+  {
+   "cidade": "SÃO GONÇALO",
+   "Volume": [
+    278.1,
+    90.75,
+    181.5,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    206.45,
+    53.22,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "FLORIANOPOLIS",
+   "Volume": [
+    229.35,
+    299.25,
+    166.05,
+    40.1,
+    123.9
+   ],
+   "Variação": [
+    0.0,
+    -23.36,
+    38.12,
+    471.95,
+    85.11
+   ]
+  },
+  {
+   "cidade": "CAUCAIA",
+   "Volume": [
+    225.57,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "CAMPO GRANDE",
+   "Volume": [
+    218.85,
+    null,
+    429.0,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    -48.99,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "CABO FRIO",
+   "Volume": [
+    210.75,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "DUQUE DE CAXIAS",
+   "Volume": [
+    172.6,
+    382.6,
+    139.55,
+    null,
+    359.98
+   ],
+   "Variação": [
+    0.0,
+    -54.89,
+    23.68,
+    null,
+    -52.05
+   ]
+  },
+  {
+   "cidade": "VILA VELHA",
+   "Volume": [
+    171.81,
+    673.46,
+    43.63,
+    null,
+    511.2
+   ],
+   "Variação": [
+    0.0,
+    -74.49,
+    293.79,
+    null,
+    -66.39
+   ]
+  },
+  {
+   "cidade": "JANDIRA",
+   "Volume": [
+    170.05,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "SANTA LUZIA",
+   "Volume": [
+    165.45,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "CARAPICUIBA",
+   "Volume": [
+    163.5,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "PETROLINA",
+   "Volume": [
+    148.75,
+    71.75,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    107.32,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "São Bernardo do Campo",
+   "Volume": [
+    141.19,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "BELFORD ROXO",
+   "Volume": [
+    132.49,
+    93.86,
+    null,
+    null,
+    73.28
+   ],
+   "Variação": [
+    0.0,
+    41.16,
+    null,
+    null,
+    80.8
+   ]
+  },
+  {
+   "cidade": "IPATINGA",
+   "Volume": [
+    131.75,
+    null,
+    null,
+    null,
+    105.75
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    24.59
+   ]
+  },
+  {
+   "cidade": "ITABORAI",
+   "Volume": [
+    131.7,
+    null,
+    163.9,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    -19.65,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "MANAUS",
+   "Volume": [
+    128.5,
+    32.75,
+    350.85,
+    null,
+    259.75
+   ],
+   "Variação": [
+    0.0,
+    292.37,
+    -63.37,
+    null,
+    -50.53
+   ]
+  },
+  {
+   "cidade": "TERESINA",
+   "Volume": [
+    126.34,
+    53.84,
+    109.82,
+    245.57,
+    null
+   ],
+   "Variação": [
+    0.0,
+    134.66,
+    15.04,
+    -48.55,
+    null
+   ]
+  },
+  {
+   "cidade": "VARGINHA",
+   "Volume": [
+    86.32,
+    null,
+    31.48,
+    null,
+    61.0
+   ],
+   "Variação": [
+    0.0,
+    null,
+    174.21,
+    null,
+    41.51
+   ]
+  },
+  {
+   "cidade": "ITABUNA",
+   "Volume": [
+    81.95,
+    279.63,
+    377.5,
+    510.62,
+    178.75
+   ],
+   "Variação": [
+    0.0,
+    -70.69,
+    -78.29,
+    -83.95,
+    -54.15
+   ]
+  },
+  {
+   "cidade": "GOVERNADOR VALADARES",
+   "Volume": [
+    66.75,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "Duque de Caxias",
+   "Volume": [
+    64.62,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "JOAO PESSOA",
+   "Volume": [
+    39.23,
+    null,
+    32.88,
+    9.11,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    19.31,
+    330.63,
+    null
+   ]
+  },
+  {
+   "cidade": "CAMPINA GRANDE",
+   "Volume": [
+    30.3,
+    135.5,
+    167.5,
+    107.5,
+    139.0
+   ],
+   "Variação": [
+    0.0,
+    -77.64,
+    -81.91,
+    -71.81,
+    -78.2
+   ]
+  },
+  {
+   "cidade": "PAULISTA",
+   "Volume": [
+    27.9,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "JABOATAO DOS GUARARAPES",
+   "Volume": [
+    27.68,
+    null,
+    21.09,
+    164.75,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    31.25,
+    -83.2,
+    null
+   ]
+  },
+  {
+   "cidade": "PATY DO ALFERES",
+   "Volume": [
+    24.4,
+    181.75,
+    94.75,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    -86.57,
+    -74.25,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "Londrina",
+   "Volume": [
+    19.7,
+    null,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    0.0,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "RIBEIRAO PRETO",
+   "Volume": [
+    17.54,
+    37.35,
+    null,
+    35.78,
+    null
+   ],
+   "Variação": [
+    0.0,
+    -53.04,
+    null,
+    -50.98,
+    null
+   ]
+  },
+  {
+   "cidade": "ALAGOINHAS",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    487.25
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "ARACAJU",
+   "Volume": [
+    null,
+    96.5,
+    219.59,
+    96.1,
+    896.21
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    -100.0,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "BAURU",
+   "Volume": [
+    null,
+    172.1,
+    295.47,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "Belford Roxo",
+   "Volume": [
+    null,
+    177.55,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "Belo Horizonte",
+   "Volume": [
+    null,
+    101.75,
+    61.15,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "Brasília",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    65.45
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "CAJAMAR",
+   "Volume": [
+    null,
+    null,
+    null,
+    1132.75,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "CAMPINAS",
+   "Volume": [
+    null,
+    null,
+    978.23,
+    100.64,
+    1840.23
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "CARUARU",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    245.74
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "CONCEIÇAO DA FEIRA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    242.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "CONFINS",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    280.34
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "EMBU DAS ARTES",
+   "Volume": [
+    null,
+    null,
+    227.45,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "ESPINOSA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    50.65
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "EXTREMOZ",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    100.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "FEIRA DE SANTANA",
+   "Volume": [
+    null,
+    201.64,
+    null,
+    135.76,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "GAMA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    133.2
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "GARANHUNS",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    86.48
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "GOIAS",
+   "Volume": [
+    null,
+    228.65,
+    497.41,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "GUARANI",
+   "Volume": [
+    null,
+    null,
+    112.19,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "HORTOLANDIA",
+   "Volume": [
+    null,
+    null,
+    null,
+    1275.05,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "IPOJUCA",
+   "Volume": [
+    null,
+    null,
+    null,
+    330.71,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "ITAGUAI",
+   "Volume": [
+    null,
+    627.5,
+    null,
+    null,
+    706.5
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "JUIZ DE FORA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    225.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "Lagoa Santa",
+   "Volume": [
+    null,
+    308.5,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "LAURO DE FREITAS",
+   "Volume": [
+    null,
+    67.87,
+    72.82,
+    null,
+    39.82
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "LONDRINA",
+   "Volume": [
+    null,
+    null,
+    115.76,
+    49.61,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "LUZIANIA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    699.55
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "MACAE",
+   "Volume": [
+    null,
+    49.75,
+    null,
+    null,
+    388.65
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "MACAPA",
+   "Volume": [
+    null,
+    null,
+    105.1,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "MACEIO",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    80.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "MARABA",
+   "Volume": [
+    null,
+    111.7,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "NOVA IGUACU",
+   "Volume": [
+    null,
+    null,
+    197.75,
+    223.7,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "OLINDA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    137.31
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "PACATUBA",
+   "Volume": [
+    null,
+    null,
+    57.99,
+    60.06,
+    200.08
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "PALMAS",
+   "Volume": [
+    null,
+    null,
+    81.75,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "PLANALTINA",
+   "Volume": [
+    null,
+    45.78,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "PORTO SEGURO",
+   "Volume": [
+    null,
+    633.5,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "PRAIA GRANDE",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    6.58
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "QUEIMADOS",
+   "Volume": [
+    null,
+    null,
+    126.75,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "Recife",
+   "Volume": [
+    null,
+    null,
+    null,
+    49.99,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "RIBEIRAO PIRES",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    1361.77
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "RIO BRANCO",
+   "Volume": [
+    null,
+    147.75,
+    null,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "RIO VERDE",
+   "Volume": [
+    null,
+    null,
+    null,
+    4888.86,
+    1067.52
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SANTA MARIA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    196.58
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SANTO ANDRE",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    186.1
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SAO BERNARDO DO CAMPO",
+   "Volume": [
+    null,
+    null,
+    590.05,
+    null,
+    98.0
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SAO CAETANO DO SUL",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    52.2
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SAO GONCALO",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    99.2
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SAO GONCALO DO AMARANTE",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    130.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SAO PEDRO DA ALDEIA",
+   "Volume": [
+    null,
+    null,
+    347.75,
+    115.35,
+    252.1
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SAO VICENTE",
+   "Volume": [
+    null,
+    3675.95,
+    19.35,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "Serra",
+   "Volume": [
+    null,
+    157.55,
+    424.99,
+    null,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    -100.0,
+    null,
+    null
+   ]
+  },
+  {
+   "cidade": "SERRINHA",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    312.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SIMOES FILHO",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    500.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "SUMARE",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    281.5
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "TABOAO DA SERRA",
+   "Volume": [
+    null,
+    67.47,
+    null,
+    114.19,
+    null
+   ],
+   "Variação": [
+    null,
+    -100.0,
+    null,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "VARZEA GRANDE",
+   "Volume": [
+    null,
+    null,
+    91.75,
+    76.75,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "Vila Velha",
+   "Volume": [
+    null,
+    null,
+    243.64,
+    117.13,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "VITORIA DA CONQUISTA",
+   "Volume": [
+    null,
+    null,
+    69.5,
+    224.95,
+    null
+   ],
+   "Variação": [
+    null,
+    null,
+    -100.0,
+    -100.0,
+    null
+   ]
+  },
+  {
+   "cidade": "VOTORANTIM",
+   "Volume": [
+    null,
+    null,
+    null,
+    null,
+    530.75
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    null,
+    -100.0
+   ]
+  },
+  {
+   "cidade": "VOTUPORANGA",
+   "Volume": [
+    null,
+    null,
+    null,
+    1179.6,
+    1092.8
+   ],
+   "Variação": [
+    null,
+    null,
+    null,
+    -100.0,
+    -100.0
+   ]
+  }
+ ]
+}
